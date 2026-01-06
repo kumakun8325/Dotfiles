@@ -278,9 +278,21 @@ throw new AppError({
 });
 ```
 
+## 27. SOLID原則の遵守
+オブジェクト指向のコードを書く際は、SOLID原則を意識すること：
+- **S (Single Responsibility)**: 1クラス = 1つの責任。変更理由は1つだけ
+- **O (Open-Closed)**: 拡張に開き、修正に閉じる。switch/if-elseチェーンを避ける
+- **L (Liskov Substitution)**: 派生クラスは基底クラスと置換可能
+- **I (Interface Segregation)**: 大きなインターフェースより小さく分割
+- **D (Dependency Inversion)**: 具象より抽象に依存。DIを活用
+
+※ 小規模なスクリプトやプロトタイプには過剰適用しない
+※ 参考: https://techblog.kayac.com/2025/12/24/100000
+
 ---
 
 *このルールは Zenn記事 (https://zenn.dev/ken1141/articles/4a8810343e5c07) を参考に作成*
 *Claude Code開発者のベストプラクティス (https://zenn.dev/explaza/articles/a387d2bf1cb448) も参考*
 *ChatGPT/Claudeからの改善提案（2026-01-06）を統合*
+*SOLID原則 (https://techblog.kayac.com/2025/12/24/100000) を追加*
 *Dotfilesリポジトリで管理: https://github.com/kumakun8325/Dotfiles*
