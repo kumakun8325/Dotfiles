@@ -22,7 +22,7 @@ description: 勉強会スライドを自動生成する
 - ポーズバリエーション（説明、歓迎、質問、応援、困り等）を用意
 
 ### Step 3: Antigravityでプロンプトを作成
-- NotebookLMに入力する詳細なスライド生成プロンプトを作成
+- `オリキャラ/notebooklm_prompt_template.md` をベースに、テーマに合わせて改変
 - キャラクター配置ルール、デザインルール、禁止事項を含める
 
 ### Step 4: NotebookLMでスライドを生成
